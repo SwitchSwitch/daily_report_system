@@ -22,7 +22,7 @@ import javax.persistence.Table;
             query = "SELECT COUNT(e) FROM Employee AS e"
             ),
     @NamedQuery(
-            name = "checkRegisterCode",
+            name = "checkRegisteredCode",
             query = "SELECT COUNT(e) FROM Employee AS e WHERE e.code= :code"
             ),
     @NamedQuery(
@@ -59,11 +59,11 @@ public class Employee {
     @Column(name= "delete_flag", nullable = false)
     private Integer delete_flag;
 
-    public Integer getID(){
+    public Integer getId(){
         return id;
     }
 
-    public void setID(Integer id){
+    public void setId(Integer id){
         this.id= id;
     }
 
