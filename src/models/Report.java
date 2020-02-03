@@ -55,7 +55,7 @@ public class Report {
     @Column(name="updated_at", nullable= false)
     private Timestamp updated_at;
 
-    public Integer getID(){
+    public Integer getId(){
         return id;
     }
 
